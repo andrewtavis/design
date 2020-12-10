@@ -13,3 +13,4 @@
 ### [3D Neural Network Model](https://github.com/andrewtavis/design/tree/main/neural_network_blender_model)
 Making a 3D model of a nueral network using Python and [Blender](https://www.blender.org/)
 
+![](https://raw.githubusercontent.com/andrewtavis/design/main/resources/gh_images/neural_network_stl.gif)
