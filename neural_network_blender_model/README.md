@@ -1,5 +1,5 @@
 <div align="center">
-  <a href="https://github.com/andrewtavis/design"><img src="https://raw.githubusercontent.com/andrewtavis/design/master/resources/gh_imgaes/neural_net_logo.png" width="958" height="300"></a>
+  <a href="https://github.com/andrewtavis/design"><img src="https://github.com/andrewtavis/design/blob/main/resources/gh_images/neural_net_logo.png" width="638" height="200"></a>
 </div>
 
 --------------------------------------
@@ -12,7 +12,6 @@
 This directory takes you through the steps to make a 3D model of a nueral network using Python and [Blender](https://www.blender.org/). The final result includes a base that allows it to be 3D printed.
 
 # Process
-The full .blend file can be downloaded [here]().
 
 ### Imports and basics
 
@@ -209,8 +208,8 @@ layer_lower_z_dims = find_z_dims(num_layers)
 create_base(num_layers, layer_lower_z_dims)
 ```
 
-# Results
-Here are images of the final model:
+# Result
+Here's an image of the final model:
 
 <p align="middle">
   <img src="https://raw.githubusercontent.com/andrewtavis/design/main/resources/gh_images/neural_network_model.png" width="600" />
