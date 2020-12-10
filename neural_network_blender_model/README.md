@@ -9,7 +9,7 @@
 **Jump to:** [Process](#process) • [Result](#result)
 
 # Explanation
-This directory takes you through the steps to make a 3D model of a [nueral network](https://en.wikipedia.org/wiki/Neural_network) using Python and [Blender](https://www.blender.org/). The final result includes a base that allows it to be 3D printed.
+This directory takes you through the steps to make a 3D model of a [nueral network](https://en.wikipedia.org/wiki/Neural_network) using Python and [Blender](https://www.blender.org/). The final result includes a base that it can stand on after being 3D printed.
 
 # Process
 
@@ -210,10 +210,6 @@ create_base(num_layers, layer_lower_z_dims)
 
 # Result
 
-A zip of the final .blend file can be found [here](https://github.com/andrewtavis/design/blob/main/neural_network_blender_model/neural_network.blend.zip), and an .stl file can be viewed [here](https://github.com/andrewtavis/design/blob/main/neural_network_blender_model/neural_network.stl).
+A zip of the final .blend file can be found [here](https://github.com/andrewtavis/design/blob/main/neural_network_blender_model/neural_network.blend.zip), and the .stl file below is [here](https://github.com/andrewtavis/design/blob/main/neural_network_blender_model/neural_network.stl).
 
-An image of the final model:
-
-<p align="middle">
-  <img src="https://raw.githubusercontent.com/andrewtavis/design/main/resources/gh_images/neural_network_model.png" width="600" />
-</p>
+![](https://raw.githubusercontent.com/andrewtavis/design/main/resources/gh_images/neural_network_stl.gif)
