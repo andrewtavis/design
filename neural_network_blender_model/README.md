@@ -1,5 +1,5 @@
 <div align="center">
-  <a href="https://github.com/andrewtavis/design"><img src="https://github.com/andrewtavis/design/blob/main/resources/gh_images/neural_net_logo.png" width="638" height="200"></a>
+  <a href="https://github.com/andrewtavis/design/tree/main/neural_network_blender_model"><img src="https://github.com/andrewtavis/design/blob/main/resources/gh_images/neural_net_logo.png" width="638" height="200"></a>
 </div>
 
 --------------------------------------
@@ -9,7 +9,7 @@
 **Jump to:** [Process](#process) • [Result](#result)
 
 # Explanation
-This directory takes you through the steps to make a 3D model of a nueral network using Python and [Blender](https://www.blender.org/). The final result includes a base that allows it to be 3D printed.
+This directory takes you through the steps to make a 3D model of a [nueral network](https://en.wikipedia.org/wiki/Neural_network) using Python and [Blender](https://www.blender.org/). The final result includes a base that allows it to be 3D printed.
 
 # Process
 
