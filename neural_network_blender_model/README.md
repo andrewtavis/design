@@ -212,4 +212,3 @@ create_base(num_layers, layer_lower_z_dims)
 
 A zip of the final .blend file can be found [here](https://github.com/andrewtavis/design/blob/main/neural_network_blender_model/neural_network.blend.zip), and the .stl file below is [here](https://github.com/andrewtavis/design/blob/main/neural_network_blender_model/neural_network.stl).
 
-![](https://raw.githubusercontent.com/andrewtavis/design/main/resources/gh_images/neural_network_stl.gif)
