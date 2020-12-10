@@ -209,7 +209,10 @@ create_base(num_layers, layer_lower_z_dims)
 ```
 
 # Result
-Here's an image of the final model:
+
+A zip of the final .blend file can be found [here](https://github.com/andrewtavis/design/blob/main/neural_network_blender_model/neural_network.blend.zip), and an .stl file can be viewed [here](https://github.com/andrewtavis/design/blob/main/neural_network_blender_model/neural_network.stl).
+
+An image of the final model:
 
 <p align="middle">
   <img src="https://raw.githubusercontent.com/andrewtavis/design/main/resources/gh_images/neural_network_model.png" width="600" />
