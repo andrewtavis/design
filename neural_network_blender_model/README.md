@@ -33,8 +33,8 @@ cylander_vertices = 100
 node_coordinate_dict = {}
 
 
-def cube(number): 
-    return number * number * number 
+def cube(number):
+    return number * number * number
 ```
 
 ### Make the Nodes
@@ -47,29 +47,29 @@ def make_nn_nodes(network_layers, nodes_per_layer):
     layer_iterations = list(range(network_layers))
     for iteration in layer_iterations:
         node_iterations = list(range(nodes_per_layer[iteration]))
-        
+
         # Odd number of nodes
         if nodes_per_layer[iteration] % 2 != 0:
             iterations_center_val = math.floor(len(node_iterations)/2)
             node_locations = [i-iterations_center_val for i in node_iterations]
-            
+
             for i in node_iterations:
                 # Coordinates for node
                 coordinate_x = iteration*cube(node_radius)*node_radius
                 coordinate_z = node_locations[0]*cube(node_radius)
-                
-                bpy.ops.mesh.primitive_uv_sphere_add(segments=node_segments_rings, 
-                    ring_count=node_segments_rings, radius=node_radius, calc_uvs=True, 
+
+                bpy.ops.mesh.primitive_uv_sphere_add(segments=node_segments_rings,
+                    ring_count=node_segments_rings, radius=node_radius, calc_uvs=True,
                     enter_editmode=False, align='WORLD',
-                    location=(coordinate_x, 0, coordinate_z), 
+                    location=(coordinate_x, 0, coordinate_z),
                     rotation=(0, 0, 0))
-                    
+
                 node_locations.pop(0)
-                
+
                 node_identifier = '{}|{}'.format(str(iteration), str(i))
                 node_coordinate_dict[node_identifier] = [coordinate_x, 0, coordinate_z]
-        
-        # Even number of nodes        
+
+        # Even number of nodes
         else:
             # Two nodes
             if len(node_iterations) == 2:
@@ -79,20 +79,20 @@ def make_nn_nodes(network_layers, nodes_per_layer):
             else:
                 iterations_center_val = sum(node_iterations)/(len(node_iterations)/2)
                 node_locations = [i-(iterations_center_val/2) for i in node_iterations]
-            
+
             for i in node_iterations:
                 # Coordinates for node
                 coordinate_x = iteration*cube(node_radius)*node_radius
                 coordinate_z = node_locations[0]*cube(node_radius)
-                
-                bpy.ops.mesh.primitive_uv_sphere_add(segments=node_segments_rings, 
-                    ring_count=node_segments_rings, radius=node_radius, calc_uvs=True, 
+
+                bpy.ops.mesh.primitive_uv_sphere_add(segments=node_segments_rings,
+                    ring_count=node_segments_rings, radius=node_radius, calc_uvs=True,
                     enter_editmode=False, align='WORLD',
-                    location=(coordinate_x, 0, coordinate_z), 
+                    location=(coordinate_x, 0, coordinate_z),
                     rotation=(0, 0, 0))
-                    
+
                 node_locations.pop(0)
-                           
+
                 node_identifier = '{}|{}'.format(str(iteration), str(i))
                 node_coordinate_dict[node_identifier] = [coordinate_x, 0, coordinate_z]
 ```
@@ -106,24 +106,24 @@ def cylinder_between(x1, y1, z1, x2, y2, z2, r):
   """
   dx = x2 - x1
   dy = y2 - y1
-  dz = z2 - z1    
+  dz = z2 - z1
   dist = math.sqrt(dx**2 + dy**2 + dz**2)
 
   bpy.ops.mesh.primitive_cylinder_add(
       vertices = cylander_vertices,
-      radius = r, 
+      radius = r,
       depth = dist,
       location = (dx/2 + x1, dy/2 + y1, dz/2 + z1),
       calc_uvs=False,
       enter_editmode=False
-         
-  ) 
 
-  phi = math.atan2(dy, dx) 
-  theta = math.acos(dz/dist) 
+  )
 
-  bpy.context.object.rotation_euler[1] = theta 
-  bpy.context.object.rotation_euler[2] = phi 
+  phi = math.atan2(dy, dx)
+  theta = math.acos(dz/dist)
+
+  bpy.context.object.rotation_euler[1] = theta
+  bpy.context.object.rotation_euler[2] = phi
 
 
 def connect_nn_nodes(network_layers, nodes_per_layer):
@@ -133,25 +133,25 @@ def connect_nn_nodes(network_layers, nodes_per_layer):
     for i in list(range(network_layers))[:-1]:
         for index_left in list(range(nodes_per_layer[i])):
             for index_right in list(range(nodes_per_layer[i+1])):
-                cylinder_between(node_coordinate_dict['{}|{}'.format(str(i), str(index_left))][0], 
-                                 node_coordinate_dict['{}|{}'.format(str(i), str(index_left))][1], 
-                                 node_coordinate_dict['{}|{}'.format(str(i), str(index_left))][2], 
-                                 node_coordinate_dict['{}|{}'.format(str(i+1), str(index_right))][0], 
-                                 node_coordinate_dict['{}|{}'.format(str(i+1), str(index_right))][1], 
-                                 node_coordinate_dict['{}|{}'.format(str(i+1), str(index_right))][2], 
+                cylinder_between(node_coordinate_dict['{}|{}'.format(str(i), str(index_left))][0],
+                                 node_coordinate_dict['{}|{}'.format(str(i), str(index_left))][1],
+                                 node_coordinate_dict['{}|{}'.format(str(i), str(index_left))][2],
+                                 node_coordinate_dict['{}|{}'.format(str(i+1), str(index_right))][0],
+                                 node_coordinate_dict['{}|{}'.format(str(i+1), str(index_right))][1],
+                                 node_coordinate_dict['{}|{}'.format(str(i+1), str(index_right))][2],
                                  node_radius/4)
 ```
 
 ### Make a Base (optional - for 3D printing)
 ```python
-def find_z_dims(network_layers): 
+def find_z_dims(network_layers):
     """
     Finds all layer lowest z-dimensions for adding the base
     """
     z_dims = []
     for i in list(range(network_layers)):
         z_dims.append(node_coordinate_dict['{}|{}'.format(str(i),str(0))][2])
-        
+
     return z_dims
 
 
@@ -162,29 +162,29 @@ def create_base(network_layers, z_dims):
     # Determine odd or even number of layers to find the center
     if network_layers % 2 != 0:
         central_layer_index = math.floor(network_layers/2)
-        
+
         central_layer_bottom_node = node_coordinate_dict['{}|{}'.format(str(central_layer_index),str(0))]
-        
+
         bpy.ops.mesh.primitive_cylinder_add(vertices = cylander_vertices*cylander_vertices,
-                                            radius = network_layers*network_layers, 
+                                            radius = network_layers*network_layers,
                                             depth = node_radius/2,
-                                            location = (central_layer_bottom_node[0], 
-                                                        central_layer_bottom_node[1], 
-                                                        min(z_dims) - node_radius)   
-                                            ) 
-        
+                                            location = (central_layer_bottom_node[0],
+                                                        central_layer_bottom_node[1],
+                                                        min(z_dims) - node_radius)
+                                            )
+
     else:
         central_layers_index_left = round(network_layers/2-1)
         central_layers_index_right = round(network_layers/2)
-        
+
         central_layers_bottom_node_left = node_coordinate_dict['{}|{}'.format(str(central_layers_index_left),str(0))]
         central_layers_bottom_node_right = node_coordinate_dict['{}|{}'.format(str(central_layers_index_right),str(0))]
-        
+
         bpy.ops.mesh.primitive_cylinder_add(vertices = cylander_vertices*cylander_vertices,
-                                            radius = network_layers*network_layers, 
+                                            radius = network_layers*network_layers,
                                             depth = node_radius/2,
-                                            location = (central_layers_bottom_node_left[0] + ((central_layers_bottom_node_right[0] - central_layers_bottom_node_left[0])/2), 
-                                                        central_layers_bottom_node_left[1], 
+                                            location = (central_layers_bottom_node_left[0] + ((central_layers_bottom_node_right[0] - central_layers_bottom_node_left[0])/2),
+                                                        central_layers_bottom_node_left[1],
                                                         min(z_dims) - node_radius)
                                             )
 ```
@@ -199,7 +199,7 @@ num_layers = 5
 num_layer_nodes = [3,6,6,4,2]
 
 # Run the functions to create the model
-make_nn_nodes(num_layers, num_layer_nodes)        
+make_nn_nodes(num_layers, num_layer_nodes)
 
 connect_nn_nodes(num_layers, num_layer_nodes)
 
