@@ -8,7 +8,8 @@
 
 ### Programming based design projects
 
-**Contents:**<a id="contents"></a> [3D Neural Network Model](#3d-neural-network-model)
+# **Contents**<a id="contents"></a>
+- [3D Neural Network Model](#3d-neural-network-model)
 
 # Designs
 
