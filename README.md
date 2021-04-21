@@ -1,10 +1,10 @@
 <div align="center">
-  <a href="https://github.com/andrewtavis/design"><img src="https://raw.githubusercontent.com/andrewtavis/design/master/resources/design_logo_transparent.png" width="735" height="200"></a>
+  <a href="https://github.com/andrewtavis/design"><img src="https://raw.githubusercontent.com/andrewtavis/design/main/resources/design_logo_transparent.png" width="751" height="200"></a>
 </div>
 
 --------------------------------------
 
-[![license](https://img.shields.io/github/license/andrewtavis/design.svg)](https://github.com/andrewtavis/design/blob/main/LICENSE)
+[![license](https://img.shields.io/github/license/andrewtavis/design.svg)](https://github.com/andrewtavis/design/blob/main/LICENSE.txt)
 
 ### Programming based design projects
 
