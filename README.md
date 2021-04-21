@@ -1,5 +1,5 @@
 <div align="center">
-  <a href="https://github.com/andrewtavis/design"><img src="https://raw.githubusercontent.com/andrewtavis/design/main/resources/design_logo_transparent.png" width="751" height="200"></a>
+  <a href="https://github.com/andrewtavis/design"><img src="https://raw.githubusercontent.com/andrewtavis/design/main/resources/design_logo_transparent.png" width="656" height="175"></a>
 </div>
 
 --------------------------------------
