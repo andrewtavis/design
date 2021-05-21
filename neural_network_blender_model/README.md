@@ -2,16 +2,21 @@
   <a href="https://github.com/andrewtavis/design/tree/main/neural_network_blender_model"><img src="https://github.com/andrewtavis/design/blob/main/resources/gh_images/neural_net_logo.png" width="638" height="200"></a>
 </div>
 
---------------------------------------
+---
 
 ### Making a 3D model of a nueral network using Python and Blender
 
-**Jump to:** [Process](#process) • [Result](#result)
+# **Contents**<a id="contents"></a>
 
-# Explanation
+- [Explanation](#explanation)
+- [Process](#process)
+- [Result](#result)
+
+# Explanation [`↩`](#contents) <a id="explanation"></a>
+
 This directory takes you through the steps to make a 3D model of a [neural network](https://en.wikipedia.org/wiki/Neural_network) using Python and [Blender](https://www.blender.org/). The final result includes a base that it can stand on after being 3D printed.
 
-# Process
+# Process [`↩`](#contents) <a id="process"></a>
 
 ### Imports and basics
 
@@ -143,6 +148,7 @@ def connect_nn_nodes(network_layers, nodes_per_layer):
 ```
 
 ### Make a Base (optional - for 3D printing)
+
 ```python
 def find_z_dims(network_layers):
     """
@@ -208,8 +214,8 @@ layer_lower_z_dims = find_z_dims(num_layers)
 create_base(num_layers, layer_lower_z_dims)
 ```
 
-# Result
+# Result [`↩`](#contents) <a id="result"></a>
 
-A zip of the final .blend file can be found [here](https://github.com/andrewtavis/design/blob/main/neural_network_blender_model/neural_network.blend.zip), a .py file for the codes is [here](https://github.com/andrewtavis/design/blob/main/neural_network_blender_model/neural_network.py), and the .stl file below is [here](https://github.com/andrewtavis/design/blob/main/neural_network_blender_model/neural_network.stl).
+A zip of the final [.blend file](https://github.com/andrewtavis/design/blob/main/neural_network_blender_model/neural_network.blend.zip), a [.py file](https://github.com/andrewtavis/design/blob/main/neural_network_blender_model/neural_network.py) for the codes, and the [.stl file](https://github.com/andrewtavis/design/blob/main/neural_network_blender_model/neural_network.stl) below can all be found in this directory.
 
 ![](https://raw.githubusercontent.com/andrewtavis/design/main/resources/gh_images/neural_network_stl.gif)
