@@ -6,17 +6,23 @@
 
 ### Making a 3D model of a nueral network using Python and Blender
 
-# **Contents**<a id="contents"></a>
+<a id="contents"></a>
+
+# **Contents**
 
 - [Explanation](#explanation)
 - [Process](#process)
 - [Result](#result)
 
-# Explanation [`⇧`](#contents) <a id="explanation"></a>
+<a id="explanation"></a>
+
+# Explanation [`⇧`](#contents)
 
 This directory takes you through the steps to make a 3D model of a [neural network](https://en.wikipedia.org/wiki/Neural_network) using Python and [Blender](https://www.blender.org/). The final result includes a base that it can stand on after being 3D printed.
 
-# Process [`⇧`](#contents) <a id="process"></a>
+<a id="process"></a>
+
+# Process [`⇧`](#contents)
 
 ### Imports and basics
 
@@ -214,7 +220,9 @@ layer_lower_z_dims = find_z_dims(num_layers)
 create_base(num_layers, layer_lower_z_dims)
 ```
 
-# Result [`⇧`](#contents) <a id="result"></a>
+<a id="result"></a>
+
+# Result [`⇧`](#contents)
 
 A zip of the final [.blend file](https://github.com/andrewtavis/design/blob/main/neural_network_blender_model/neural_network.blend.zip), a [.py file](https://github.com/andrewtavis/design/blob/main/neural_network_blender_model/neural_network.py) for the codes, and the [.stl file](https://github.com/andrewtavis/design/blob/main/neural_network_blender_model/neural_network.stl) below can all be found in this directory.
 
