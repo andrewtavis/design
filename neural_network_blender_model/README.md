@@ -1,5 +1,5 @@
 <div align="center">
-  <a href="https://github.com/andrewtavis/design/tree/main/neural_network_blender_model"><img src="https://github.com/andrewtavis/design/blob/main/resources/gh_images/neural_net_logo.png" width="638" height="200"></a>
+  <a href="https://github.com/andrewtavis/design/tree/main/neural_network_blender_model"><img src="https://github.com/andrewtavis/design/blob/main/.github/resources/images/neural_net_logo.png" width="638" height="200"></a>
 </div>
 
 ---
@@ -226,4 +226,4 @@ create_base(num_layers, layer_lower_z_dims)
 
 A zip of the final [.blend file](https://github.com/andrewtavis/design/blob/main/neural_network_blender_model/neural_network.blend.zip), a [.py file](https://github.com/andrewtavis/design/blob/main/neural_network_blender_model/neural_network.py) for the codes, and the [.stl file](https://github.com/andrewtavis/design/blob/main/neural_network_blender_model/neural_network.stl) below can all be found in this directory.
 
-![](https://raw.githubusercontent.com/andrewtavis/design/main/resources/gh_images/neural_network_stl.gif)
+![](https://raw.githubusercontent.com/andrewtavis/design/main/.github/resources/images/neural_network_stl.gif)
