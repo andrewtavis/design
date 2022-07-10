@@ -1,8 +1,4 @@
-<div align="center">
-  <a href="https://github.com/andrewtavis/design/tree/main/neural_network_blender_model"><img src="https://github.com/andrewtavis/design/blob/main/.github/resources/images/neural_net_logo.png" width="638" height="200"></a>
-</div>
-
----
+# Neural Network Model
 
 ### Making a 3D model of a nueral network using Python and Blender
 
