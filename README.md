@@ -7,7 +7,7 @@
 [![license](https://img.shields.io/github/license/andrewtavis/design.svg)](https://github.com/andrewtavis/design/blob/main/LICENSE.txt)
 [![coc](https://img.shields.io/badge/coc-Contributor%20Covenant-ff69b4.svg)](https://github.com/andrewtavis/design/blob/main/.github/CODE_OF_CONDUCT.md)
 
-## Programming based design projects
+### Programming based design projects
 
 <a id="contents"></a>
 
