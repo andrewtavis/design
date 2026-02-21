@@ -1,24 +1,22 @@
+<a id="top"></a>
+
 # 3D Neural Network Model
 
 ### Making a 3D model of a neural network using Python and Blender
 
-<a id="contents"></a>
-
-# **Contents**
+# Contents
 
 - [Explanation](#explanation)
 - [Process](#process)
 - [Result](#result)
 
-<a id="explanation"></a>
-
-# Explanation [`⇧`](#contents)
+# Explanation
 
 This directory takes you through the steps to make a 3D model of a [neural network](https://en.wikipedia.org/wiki/Neural_network) using Python and [Blender](https://www.blender.org/). The final result includes a base that it can stand on after being 3D printed.
 
-<a id="process"></a>
+<sub><a href="#top">Back to top.</a></sub>
 
-# Process [`⇧`](#contents)
+# Process
 
 ### Imports and basics
 
@@ -47,6 +45,8 @@ def cube(number):
     """
     return number * number * number
 ```
+
+<sub><a href="#top">Back to top.</a></sub>
 
 ### Make the Nodes
 
@@ -93,6 +93,8 @@ def make_nn_nodes(network_layers, nodes_per_layer):
             node_coordinate_dict[node_identifier] = [coordinate_x, 0, coordinate_z]
 ```
 
+<sub><a href="#top">Back to top.</a></sub>
+
 ### Connect Node Layers
 
 ```python
@@ -138,6 +140,8 @@ def connect_nn_nodes(network_layers, nodes_per_layer):
                     NODE_RADIUS / 4,
                 )
 ```
+
+<sub><a href="#top">Back to top.</a></sub>
 
 ### Make a Base (optional - for 3D printing)
 
@@ -203,6 +207,8 @@ def create_base(network_layers, z_dims):
         )
 ```
 
+<sub><a href="#top">Back to top.</a></sub>
+
 ### Putting it All Together
 
 The model is made by running all the previous functions with defined inputs. The inputs here make a very basic network that resembles the [Millennium Falcon](https://en.wikipedia.org/wiki/Millennium_Falcon) (not intentional, but awesome).
@@ -222,10 +228,12 @@ layer_lower_z_dims = find_z_dims(num_layers)
 create_base(num_layers, layer_lower_z_dims)
 ```
 
-<a id="result"></a>
+<sub><a href="#top">Back to top.</a></sub>
 
-# Result [`⇧`](#contents)
+# Result
 
 A zip of the final [.blend file](https://github.com/andrewtavis/design/blob/main/neural_network_blender_model/neural_network.blend.zip), a [.py file](https://github.com/andrewtavis/design/blob/main/neural_network_blender_model/neural_network.py) for the codes, and the [.stl file](https://github.com/andrewtavis/design/blob/main/neural_network_blender_model/neural_network.stl) below can all be found in this directory.
 
 ![](https://raw.githubusercontent.com/andrewtavis/design/main/.github/resources/images/neural_network_stl.gif)
+
+<sub><a href="#top">Back to top.</a></sub>
