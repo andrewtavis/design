@@ -53,13 +53,13 @@ def cube(number):
 ```python
 def make_nn_nodes(network_layers, nodes_per_layer):
     """
-    Creates neural network nodes and saves their coordinates for later connection
+    Creates neural network nodes and saves their coordinates for later connection.
     """
     layer_iterations = list(range(network_layers))
     for iteration in layer_iterations:
         node_iterations = list(range(nodes_per_layer[iteration]))
 
-        # Odd number of nodes
+        # Odd number of nodes.
         if nodes_per_layer[iteration] % 2 != 0:
             iterations_center_val = math.floor(len(node_iterations) / 2)
             node_locations = [i - iterations_center_val for i in node_iterations]
@@ -100,7 +100,7 @@ def make_nn_nodes(network_layers, nodes_per_layer):
 ```python
 def cylinder_between(x1, y1, z1, x2, y2, z2, r):
     """
-    Makes a cylinder connector between neural network nodes
+    Makes a cylinder connector between neural network nodes.
     """
     dx = x2 - x1
     dy = y2 - y1
@@ -232,8 +232,8 @@ create_base(num_layers, layer_lower_z_dims)
 
 # Result
 
-A zip of the final [.blend file](https://github.com/andrewtavis/design/blob/main/neural_network_blender_model/neural_network.blend.zip), a [.py file](https://github.com/andrewtavis/design/blob/main/neural_network_blender_model/neural_network.py) for the codes, and the [.stl file](https://github.com/andrewtavis/design/blob/main/neural_network_blender_model/neural_network.stl) below can all be found in this directory.
+A zip of the final [.blend file](https://codeberg.org/andrewtavis/design/src/branch/main/neural_network_blender_model/neural_network.blend.zip), a [.py file](https://codeberg.org/andrewtavis/design/src/branch/main/neural_network_blender_model/neural_network.py) for the codes, and the [.stl file](https://codeberg.org/andrewtavis/design/src/branch/main/neural_network_blender_model/neural_network.stl) below can all be found in this directory.
 
-![](https://raw.githubusercontent.com/andrewtavis/design/main/.github/resources/images/neural_network_stl.gif)
+![](https://codeberg.org/andrewtavis/design/raw/branch/main/.forgejo/resources/images/neural_network_stl.gif)
 
 <sub><a href="#top">Back to top.</a></sub>
