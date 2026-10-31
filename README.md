@@ -9,6 +9,10 @@
 
 ### Programming based design projects
 
+# Maintenance
+
+`design` is maintained at [codeberg.org/andrewtavis/design](https://codeberg.org/andrewtavis/design). Please visit this remote repository for issues and pull requests.
+
 # Designs
 
 ### [3D Neural Network Model](https://codeberg.org/andrewtavis/design/src/branch/main/3d_neural_network_model)
