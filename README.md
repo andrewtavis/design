@@ -19,4 +19,4 @@
 
 Making a 3D model of a neural network using Python and [Blender](https://www.blender.org/).
 
-![](https://codeberg.org/andrewtavis/design/raw/branch/main/.github/resources/images/neural_network_stl.gif)
+![](https://codeberg.org/andrewtavis/design/raw/branch/main/.forgejo/resources/images/neural_network_stl.gif)
