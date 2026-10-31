@@ -23,7 +23,6 @@ This directory takes you through the steps to make a 3D model of a [neural netwo
 ```python
 import math
 
-import bmesh
 import bpy
 
 bpyscene = bpy.context.scene
@@ -232,7 +231,7 @@ create_base(num_layers, layer_lower_z_dims)
 
 # Result
 
-A zip of the final [.blend file](https://codeberg.org/andrewtavis/design/src/branch/main/neural_network_blender_model/neural_network.blend.zip), a [.py file](https://codeberg.org/andrewtavis/design/src/branch/main/neural_network_blender_model/neural_network.py) for the codes, and the [.stl file](https://codeberg.org/andrewtavis/design/src/branch/main/neural_network_blender_model/neural_network.stl) below can all be found in this directory.
+A zip of the final [.blend file](https://codeberg.org/andrewtavis/design/src/branch/main/3d_neural_network_model/neural_network.blend.zip), a [.py file](https://codeberg.org/andrewtavis/design/src/branch/main/3d_neural_network_model/neural_network.py) for the codes, and the [.stl file](https://codeberg.org/andrewtavis/design/src/branch/main/3d_neural_network_model/neural_network.stl) below can all be found in this directory.
 
 ![](https://codeberg.org/andrewtavis/design/raw/branch/main/.forgejo/resources/images/neural_network_stl.gif)
 
